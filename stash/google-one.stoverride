@@ -1,0 +1,9 @@
+name: 'Google One 响应正文替换'
+desc: '仅匹配 one.google.com/ai? 地址，替换响应正文中的套餐标识（Stash 专用覆写）'
+
+http:
+  mitm:
+    - 'one.google.com'
+  body-rewrite:
+    - '^https://one\.google\.com/ai\?.*$ response-replace-regex 30tb\.ai\.pro\.m 30tb.m'
+    - '^https://one\.google\.com/ai\?.*$ response-replace-regex 20tb\.m\.v2 20tb.m'

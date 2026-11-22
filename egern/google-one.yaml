@@ -1,0 +1,16 @@
+name: Google One 响应正文替换
+description: 仅匹配 one.google.com/ai? 地址，替换响应正文中的套餐标识（Egern 专用模块）
+
+mitm:
+  hostnames:
+    - one.google.com
+
+body_rewrites:
+  - response_regex:
+      match: ^https://one\.google\.com/ai\?.*$
+      find: 30tb\.ai\.pro\.m
+      replace: 30tb.m
+  - response_regex:
+      match: ^https://one\.google\.com/ai\?.*$
+      find: 20tb\.m\.v2
+      replace: 20tb.m

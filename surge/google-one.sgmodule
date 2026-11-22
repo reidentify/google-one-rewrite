@@ -1,0 +1,9 @@
+#!name=Google One 响应正文替换
+#!desc=仅匹配 one.google.com/ai? 地址，替换响应正文中的套餐标识（Surge 专用模块）
+
+[Body Rewrite]
+http-response ^https://one\.google\.com/ai\?.*$ 30tb\.ai\.pro\.m 30tb.m
+http-response ^https://one\.google\.com/ai\?.*$ 20tb\.m\.v2 20tb.m
+
+[MITM]
+hostname = %APPEND% one.google.com
