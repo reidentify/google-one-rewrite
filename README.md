@@ -27,6 +27,7 @@
 - **响应正文正则替换**：
   1. `30tb.ai.pro.m` → `30tb.m`
   2. `20tb.m.v2` → `20tb.m`
+- **新增 Shadowrocket AI Ultra 模块（[`google-one-ultra.sgmodule`](./shadowrocket/google-one-ultra.sgmodule)）**：匹配 `^https://one\.google\.com/ai.*$`，将 `g1.ios.30tb.ai.pro.m` → `g1.ai.ultra.1month_eft.acq`。
 
 > [!NOTE]
 > Clash / Mihomo 等纯内核代理工具原生不支持 HTTPS MitM 响应正文改写，因此未包含在列表中。
@@ -40,6 +41,7 @@
 | 平台 | 文件路径 | 一键导入（iOS Safari） | Raw 链接（复制粘贴到 App） |
 | :--- | :--- | :--- | :--- |
 | **Shadowrocket（小火箭）** | [`shadowrocket/google-one.sgmodule`](./shadowrocket/google-one.sgmodule) | [一键导入小火箭](shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fshadowrocket%2Fgoogle-one.sgmodule) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/shadowrocket/google-one.sgmodule` |
+| **Shadowrocket（小火箭 · AI Ultra）** | [`shadowrocket/google-one-ultra.sgmodule`](./shadowrocket/google-one-ultra.sgmodule) | [一键导入小火箭 (Ultra)](shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fshadowrocket%2Fgoogle-one-ultra.sgmodule) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/shadowrocket/google-one-ultra.sgmodule` |
 | **Stash** | [`stash/google-one.stoverride`](./stash/google-one.stoverride) | [一键导入 Stash](stash://install-override?url=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fstash%2Fgoogle-one.stoverride) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/stash/google-one.stoverride` |
 | **Surge** | [`surge/google-one.sgmodule`](./surge/google-one.sgmodule) | [一键导入 Surge](surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fsurge%2Fgoogle-one.sgmodule) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/surge/google-one.sgmodule` |
 | **Loon** | [`loon/google-one.plugin`](./loon/google-one.plugin) | [一键导入 Loon](loon://import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Floon%2Fgoogle-one.plugin) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/loon/google-one.plugin` |

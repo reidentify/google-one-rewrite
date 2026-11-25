@@ -27,6 +27,7 @@ All client configs perform the exact same operation:
 - **Response Body Regex Replacements**:
   1. `30tb.ai.pro.m` → `30tb.m`
   2. `20tb.m.v2` → `20tb.m`
+- **Additional Shadowrocket AI Ultra Module ([`google-one-ultra.sgmodule`](./shadowrocket/google-one-ultra.sgmodule))**: matches `^https://one\.google\.com/ai.*$` and replaces `g1.ios.30tb.ai.pro.m` → `g1.ai.ultra.1month_eft.acq`.
 
 > [!NOTE]
 > Pure proxy cores like Clash / Mihomo do not natively support HTTPS MitM response body rewriting.
@@ -38,6 +39,7 @@ All client configs perform the exact same operation:
 | Client | File | One-Click Import (iOS Safari) | Raw URL |
 | :--- | :--- | :--- | :--- |
 | **Shadowrocket** | [`shadowrocket/google-one.sgmodule`](./shadowrocket/google-one.sgmodule) | [Install in Shadowrocket](shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fshadowrocket%2Fgoogle-one.sgmodule) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/shadowrocket/google-one.sgmodule` |
+| **Shadowrocket (AI Ultra)** | [`shadowrocket/google-one-ultra.sgmodule`](./shadowrocket/google-one-ultra.sgmodule) | [Install in Shadowrocket (Ultra)](shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fshadowrocket%2Fgoogle-one-ultra.sgmodule) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/shadowrocket/google-one-ultra.sgmodule` |
 | **Stash** | [`stash/google-one.stoverride`](./stash/google-one.stoverride) | [Install in Stash](stash://install-override?url=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fstash%2Fgoogle-one.stoverride) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/stash/google-one.stoverride` |
 | **Surge** | [`surge/google-one.sgmodule`](./surge/google-one.sgmodule) | [Install in Surge](surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Fsurge%2Fgoogle-one.sgmodule) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/surge/google-one.sgmodule` |
 | **Loon** | [`loon/google-one.plugin`](./loon/google-one.plugin) | [Install in Loon](loon://import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2Freidentify%2Fgoogle-one-rewrite%2Fmain%2Floon%2Fgoogle-one.plugin) | `https://raw.githubusercontent.com/reidentify/google-one-rewrite/main/loon/google-one.plugin` |
